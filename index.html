@@ -423,29 +423,32 @@
                 </svg>
             </button>
 
-            <b>Оставьте свои данные, мы вам перезвоним</b>
+            <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
 
             <form action="" class="modal-form">
 
-                <label for="" class="modal-form-field">
+                <label class="modal-form-field">
                     Имя
-                    <input type="text" name="user-name" class="modal-form-input" minlength="2">
+                    <input type="text" name="user-name" class="modal-form-input" minlength="2" autocomplete="off">
                 </label>
-                <label for="" class="modal-form-field">
+                <label class="modal-form-field">
                     Телефон
                     <input type="tel" name="user-phone" class="modal-form-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11-11">
                 </label>
-                <label for="" class="modal-form-field">
+                <label class="modal-form-field">
                     Почта
                     <input type="email" name="user-mail" class="modal-form-input">
                 </label>
-                <label for="" class="modal-form-field">
+                <label class="modal-form-field">
                     Комментарий
                     <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
                 </label>
-
-            </form>
-            
+                <input type="checkbox" id="user-term" name="user-term" class="modal-form-term">
+                <label for="user-term" class="modal-form-check-desc">Соглашаюсь с рассылкой и принимаю
+                         <a href="">Условия договора</a>
+                </label>
+                    <button type="submit" class="modal-form-btn">Отправить</button>
+            </form>      
         </div>
     </div>
 
